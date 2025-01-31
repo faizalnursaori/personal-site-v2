@@ -8,7 +8,7 @@ export const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
-    <header className="flex justify-between items-center px-8 py-4 bg-white relative my-8 lg:mx-12">
+    <header className="flex justify-between items-center px-8 py-4 bg-white relative my-8 lg:mx-12 ">
       <h1 className="text-2xl font-bold text-gray-800">faizalrn.</h1>
 
       <button className="md:hidden text-gray-700" onClick={() => setIsOpen(!isOpen)}>
@@ -24,13 +24,13 @@ export const Header = () => {
           href={"#"}
           className="block py-2 md:py-0 md:inline text-gray-500 text-lg font-semibold hover:text-black transition"
         >
-          Work
+          About
         </Link>
         <Link
           href={"#"}
           className="block py-2 md:py-0 md:inline text-gray-500 text-lg font-semibold hover:text-black transition"
         >
-          About
+          Project
         </Link>
         <Link
           href={"#"}
@@ -52,7 +52,6 @@ export const Header = () => {
         </Link>
       </nav>
 
-      {/* Contact Me Link */}
       <Link href={"#"} className="hidden md:block text-gray-700 text-lg font-semibold">
         Contact Me
       </Link>
