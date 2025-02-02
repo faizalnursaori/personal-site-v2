@@ -8,7 +8,7 @@ export const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
-    <header className="flex justify-between items-center px-8 py-4 bg-white relative my-8 lg:mx-12 ">
+    <header className="sticky top-0 z-50 flex justify-between items-center px-8 py-4 bg-white lg:mx-12 my-8">
       <h1 className="text-2xl font-bold text-gray-800">faizalrn.</h1>
 
       <button className="md:hidden text-gray-700" onClick={() => setIsOpen(!isOpen)}>
