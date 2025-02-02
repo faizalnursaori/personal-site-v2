@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { navLinks } from "@/utils/NavLinks";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -18,13 +19,6 @@ export const Header = () => {
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
-  const navLinks = [
-    { href: "/about", label: "About" },
-    { href: "/projects", label: "Project" },
-    { href: "/cv", label: "My CV" },
-    { href: "/contact", label: "Contact Me", mobileOnly: true },
-  ];
 
   const isActive = (href: string) => pathname === href;
 
