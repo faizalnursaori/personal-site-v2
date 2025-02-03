@@ -33,11 +33,11 @@ export const ProjectCard: React.FC<ProjectItem> = ({
             alt={imageAlt}
             width={600}
             height={600}
-            className="object-cover rounded-b-none lg:rounded-xl border-2"
+            className="object-cover border-b-0 lg:border-b-2 lg:rounded-xl border-2"
           />
         </div>
         <div
-          className={`flex-1 space-y-4 px-4 lg:px-10 py-8 border-2 lg:rounded-xl ${
+          className={`flex-1 space-y-4 px-4 lg:px-10 py-6 border-2 lg:rounded-xl ${
             reverse ? "lg:order-2" : "lg:order-1"
           }`}
         >

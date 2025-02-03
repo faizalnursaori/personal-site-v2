@@ -1,4 +1,4 @@
-export const projects = [
+export const allProjects = [
   {
     title: "E-Commerce Web App",
     description: "A full-stack e-commerce platform with a seamless shopping experience.",
@@ -29,6 +29,20 @@ export const projects = [
       { title: "Express.js", image: "/images/expressjs.png" },
       { title: "TailwindCSS", image: "/images/tailwindcss.png" },
       { title: "MySQL", image: "/images/mysql.png" },
+    ],
+  },
+  {
+    title: "Mini Project",
+    description: "A mini project to practice React and TypeScript.",
+    image: "/images/mini-project-new.png",
+    imageAlt: "Mini project pictures",
+    link: "#",
+    repository: "https://github.com/faizalnursaori/",
+    tags: ["Events", "Management", "CRUD"],
+    techStack: [
+      { title: "Typescript", image: "/images/typescript.png" },
+      { title: "ReactJS", image: "/images/reactjs.webp" },
+      { title: "TailwindCSS", image: "/images/tailwindcss.png" },
     ],
   },
 ];

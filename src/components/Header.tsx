@@ -55,9 +55,9 @@ export const Header = () => {
       </nav>
 
       <Link
-        href="/contact"
+        href="mailto:someone@faizalrahmatn@gmail.com"
         className={`hidden md:block text-lg transition ${
-          isActive("/contact")
+          isActive("mailto:someone@faizalrahmatn@gmail.com")
             ? "text-black font-bold"
             : "text-gray-700 font-semibold hover:text-black"
         }`}

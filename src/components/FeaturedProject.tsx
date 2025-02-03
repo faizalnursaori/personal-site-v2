@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { projects } from "@/utils/Project";
+import { mainProjects as projects } from "@/utils/MainProject";
 
 export const FeaturedProjects = () => {
   return (
