@@ -3,12 +3,10 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 
-interface ProjectDetailPageProps {
-  params: { slug: string };
-}
+type tParams = Promise<{ slug: string }>;
 
-export default async function ProjectDetailPage({ params }: ProjectDetailPageProps) {
-  const { slug } = await params;
+export default async function ProjectDetailPage(props: { params: tParams }) {
+  const { slug } = await props.params;
 
   const project = mainProjects.find((p) => p.slug === slug);
 
