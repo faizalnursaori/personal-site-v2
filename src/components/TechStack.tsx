@@ -5,10 +5,10 @@ export const TechStack = () => {
   return (
     <div className="max-w-screen-lg mx-auto px-4">
       <div className="text-center mt-10">
-        <h2 className="text-3xl md:text-4xl font-bold">My Stack</h2>
-        <p className="text-lg md:text-xl text-gray-700">My Tech Stack and Design Tools</p>
+        <h2 className="text-[26px] md:text-4xl font-bold">My Stack</h2>
+        <p className="text-[18px] md:text-xl text-gray-700">My Tech Stack and Design Tools</p>
       </div>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-2 gap-4 mt-10">
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 gap-4 mt-10">
         {techStack.map((tech) => (
           <div
             key={tech.title}

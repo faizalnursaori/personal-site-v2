@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <main className="min-h-screen bg-white py-12 px-6">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-6xl font-bold text-center mb-12">About Me</h1>
+        <h1 className="text-4xl lg:text-6xl font-bold text-center mb-12">About Me</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           <div className="flex justify-center lg:justify-end">
