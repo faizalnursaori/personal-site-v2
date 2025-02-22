@@ -33,7 +33,7 @@ export const allProjects = [
   },
   {
     title: "Dynasty Basketball Landing Page",
-    description: "A landing page for Dynasty Basketball.",
+    description: "A landing page for Dynasty Basketball @dynastybasketballacademy.",
     image: "/images/dynasty-landing-page.png",
     imageAlt: "Landing Page of Dynasty",
     link: "https://www.dynastybasketball.web.id/",
