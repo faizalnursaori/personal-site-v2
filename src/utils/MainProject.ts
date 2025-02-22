@@ -58,4 +58,21 @@ export const mainProjects = [
       { title: "MySQL", image: "/images/mysql.png" },
     ],
   },
+  {
+    title: "Dynasty Basketball Landing Page",
+    slug: "dynasty-basketball-landing-page",
+    description:
+      "A landing page for Dynasty Basketball. In this project, I contributed to developing the Landing Page",
+    image: "/images/dynasty-landing-page.png",
+    imageAlt: "Landing Page of Dynasty Basketball",
+    link: "https://www.dynastybasketball.web.id/",
+    repository: "https://github.com/faizalnursaori/landing-dynasty",
+    tags: ["Landing Page"],
+    features: ["Landing Page"],
+    techStack: [
+      { title: "Typescript", image: "/images/typescript.png" },
+      { title: "NextJS", image: "/images/nextjs.png" },
+      { title: "TailwindCSS", image: "/images/tailwindcss.png" },
+    ],
+  },
 ];

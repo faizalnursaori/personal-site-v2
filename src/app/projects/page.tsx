@@ -16,6 +16,7 @@ export default function Page() {
             repository={project.repository}
             reverse={index % 2 !== 0}
             techStack={project.techStack}
+            link={project.link}
           />
         ))}
       </div>

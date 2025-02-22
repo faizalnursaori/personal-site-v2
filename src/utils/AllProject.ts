@@ -32,11 +32,25 @@ export const allProjects = [
     ],
   },
   {
+    title: "Dynasty Basketball Landing Page",
+    description: "A landing page for Dynasty Basketball.",
+    image: "/images/dynasty-landing-page.png",
+    imageAlt: "Landing Page of Dynasty",
+    link: "https://www.dynastybasketball.web.id/",
+    repository: "https://github.com/faizalnursaori/landing-dynasty",
+    tags: ["Landing Page"],
+    techStack: [
+      { title: "Typescript", image: "/images/typescript.png" },
+      { title: "NextJS", image: "/images/nextjs.png" },
+      { title: "TailwindCSS", image: "/images/tailwindcss.png" },
+    ],
+  },
+  {
     title: "Mini Project",
     description: "A mini project to practice React and TypeScript.",
     image: "/images/mini-project-new.png",
     imageAlt: "Mini project pictures",
-    link: "#",
+    link: "/projects/mini-project",
     repository: "https://github.com/faizalnursaori/",
     tags: ["Events", "Management", "CRUD"],
     techStack: [

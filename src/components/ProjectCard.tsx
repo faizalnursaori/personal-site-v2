@@ -10,6 +10,7 @@ type ProjectItem = {
   description: string;
   repository: string;
   reverse: boolean;
+  link: string;
   techStack: { title: string; image: string }[];
 };
 
@@ -20,6 +21,7 @@ export const ProjectCard: React.FC<ProjectItem> = ({
   description,
   reverse,
   repository,
+  link,
   techStack,
 }) => {
   const slug = slugify(title, { lower: true });
@@ -41,7 +43,11 @@ export const ProjectCard: React.FC<ProjectItem> = ({
             reverse ? "lg:order-2" : "lg:order-1"
           }`}
         >
-          <h2 className="text-xl md:text-2xl font-semibold">{title}</h2>
+          <Link href={`/projects/${slug}`}>
+            <h2 className="text-xl md:text-2xl font-semibold hover:underline cursor-pointer">
+              {title}
+            </h2>
+          </Link>
           <p className="text-gray-600 text-sm sm:text-base md:text-lg">{description}</p>
 
           <div className="flex flex-wrap gap-2">
@@ -53,7 +59,7 @@ export const ProjectCard: React.FC<ProjectItem> = ({
           </div>
 
           <div className="flex justify-between">
-            <Link href={`/projects/${slug}`}>
+            <Link href={link}>
               <button className="bg-black text-white font-semibold py-2 px-4 rounded mt-12">
                 View Project
               </button>
